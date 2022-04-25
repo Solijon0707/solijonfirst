@@ -1,0 +1,31 @@
+input {
+    text-align: right;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 28px;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+}
+a {
+    height: 35px;
+    width: 86px;
+    border: 1px solid deepskyblue;
+    border-radius: 8px;
+    background: white;
+    font-size: 20px;
+    color: deepskyblue;
+    text-decoration: none;
+    margin-left: 130px;
+    padding: 5px;
+}
+a:hover {
+    border: white;
+    background: deepskyblue;
+    color: white;
+}
+.con {
+
+    width: 30%;
+    margin: 200px auto;
+
+}

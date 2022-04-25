@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+Translate
+{% endblock %}
+{% block content %}
+<div class="container-fluid">
+  <div class="container">
+    <form action="" method="POST">
+      {% csrf_token %}
+      
+        <p class="fs-1 text-center mt-5">Translate App</p>
+      <div class="input-group mb-3 ">
+        <input type="text" class="form-control" placeholder="You can write a sentence in any language!" name="text" value={{ a }}>
+        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">go</button>
+      </div>
+    
+    </form>
+    <div class="row g-2">
+      <div class="col-md">
+        <div class="form-floating">
+          <p type="email" class="form-control" id="floatingInputGrid">{{ b }}</p>
+          <label for="floatingInputGrid">uzbek</label>
+        </div>
+      </div>
+      <div class="col-md">
+        <div class="form-floating">
+          <p type="text" class="form-control" id="floatingInputGrid">{{ c }}</p>
+          <label for="floatingInputGrid">russian</label>
+        </div>
+      </div>
+      </div>
+  </div>
+</div>
+
+{% endblock %}
